@@ -30,11 +30,11 @@
   *     exclude: ".noExl",//whats class tr has is not export to file
   *     filename: "hello_excel" + new Date().getTime() + ".xls",//whats name the file exported
   *     preserveColors: true ,// set to true if you want background colors and font colors preserved.The default is false
-  *     preserveHtmlStyle: true //set to true if you want html-css preserved(exclude color).The default is false
+  *     preserveHtmlStyle: true //set to true if you want common html-css preserved(exclude color).The default is false
   * });
 
  * if you want more one table in one sheet or more one sheet
- * you can add attribute "data-SheetName" in <table data-SheetName="The Sheet 1"></table>
+ * you can add attribute "data-SheetName" in table html
 
  # example
   *you can try : https://codepen.io/timemm/pen/xxqGEmG
