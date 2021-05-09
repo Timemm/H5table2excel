@@ -17,115 +17,109 @@
     <script src="./js/jquery.H5table2excel.js"></script>
 </head>
 <body>
-<a download="table导出Excel" id="excelOut" href="#">table导出Excel</a>
+<button id="excelOut">table export Excel</button>
 <table cellspacing="0" cellpadding="0" border="1" class="tableToExcel" data-SheetName="The Sheet 1" >
     <thead>
         <tr>
-            <td style="font-size: 18px;text-align: center;font-style: italic;background-color: yellow" colspan="3">我是表格标题1</td>
+            <td style="font-size: 18px;text-align: center;font-style: italic;background-color: yellow" colspan="3">Table Title</td>
         </tr>
         <tr>
-            <td style="font-size: 18px;border:5px solid #333" >公司一</td>
-            <td>公司二qqqqqqqqqqqqq</td>
-            <td>公司三</td>
+            <td style="font-size: 18px;border:5px solid #333" >H5table2excel</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2">A公司</td>
-            <td>B公司</td>
-            <td>C公司</td>
+            <td rowspan="2">H5table2excel</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
         </tr>
         <tr>
-            <td>B公司</td>
-            <td style="font-size: 18px">C公司</td>
+            <td>H5table2excel</td>
+            <td style="font-size: 18px">H5table2excel</td>
         </tr>
         <tr>
-            <td>A公司</td>
-            <td>B公司</td>
-            <td>C公司</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
         </tr>
         <tr>
-            <td colspan="3">共计</td>
+            <td colspan="3">sum</td>
         </tr>
     </tbody>
 </table>
 <table cellspacing="0" cellpadding="0" border="1" class="tableToExcel" data-SheetName="The Sheet 1">
-    <!-- <caption align="top" style="font-size: 18px">我是表格标题</caption> -->
     <thead>
         <tr>
-            <td style="font-size: 18px;text-align: center;background-color: yellow" colspan="3">我是表格标题2</td>
+            <td style="font-size: 18px;text-align: center;font-style: italic;background-color: gray" colspan="3">Table Title</td>
         </tr>
         <tr>
-            <td style="font-size: 18px" >公司一</td>
-            <td>公司二一</td>
-            <td>公司三</td>
+            <td style="font-size: 18px;border:5px solid #333" >H5table2excel</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2">A公司</td>
-            <td>B公司</td>
-            <td>C公司</td>
+            <td rowspan="2">H5table2excel</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
         </tr>
         <tr>
-            <td>B公司</td>
-            <td style="font-size: 18px">C公司</td>
+            <td>H5table2excel</td>
+            <td style="font-size: 18px">H5table2excel</td>
         </tr>
         <tr>
-            <td>A公司</td>
-            <td>B公司</td>
-            <td>C公司</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
         </tr>
         <tr>
-            <td colspan="3">共计</td>
+            <td colspan="3">sum</td>
         </tr>
     </tbody>
 </table>
 <table cellspacing="0" cellpadding="0" border="1" class="tableToExcel" data-SheetName="The Sheet 2">
-    <!-- <caption align="top" style="font-size: 18px">我是表格标题</caption> -->
     <thead>
         <tr>
-            <td style="font-size: 18px;text-align: center;background-color: yellow" colspan="3">我是表格标题2</td>
+            <td style="font-size: 18px;text-align: center;font-style: italic;background-color: red" colspan="3">Table Title</td>
         </tr>
         <tr>
-            <td style="font-size: 18px" >公司一</td>
-            <td>公司二一</td>
-            <td>公司三</td>
+            <td style="font-size: 18px;border:5px solid #333" >H5table2excel</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2">A公司</td>
-            <td>B公司</td>
-            <td>C公司</td>
+            <td rowspan="2">H5table2excel</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
         </tr>
         <tr>
-            <td>B公司</td>
-            <td style="font-size: 18px">C公司</td>
+            <td>H5table2excel</td>
+            <td style="font-size: 18px">H5table2excel</td>
         </tr>
         <tr>
-            <td>A公司</td>
-            <td>B公司</td>
-            <td>C公司</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
+            <td>H5table2excel</td>
         </tr>
         <tr>
-            <td colspan="3">共计</td>
+            <td colspan="3">sum</td>
         </tr>
     </tbody>
 </table>
 <script>
 
     window.onload = function () {
-        $('a').click(function(){
+        $('#excelOut').click(function(){
             $("table").table2excel({
-                // 不被导出的表格行的CSS class类
                 exclude: ".noExl",//whats class tr has is not export to file
-                // Excel文件的名称
-                filename: "fund-d" + new Date().getTime() + ".xls",
-                bootstrap: true,
-                preserveColors: true ,// set to true if you want background colors and font colors preserved
-                preserveHtmlStyle: true //set to true if you want html-css preserved(exclude color)
-                
+                filename: "hello_excel" + new Date().getTime() + ".xls",//whats name the file exported
+                preserveColors: true ,// set to true if you want background colors and font colors preserved.The default is false
+                preserveHtmlStyle: true //set to true if you want html-css preserved(exclude color).The default is false
             });
 
         });

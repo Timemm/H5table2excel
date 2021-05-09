@@ -6,6 +6,9 @@
  *  compare with table2excel-v1.1.2
  *  support muti-sheet、muti-table
  *  support common css style (background-color、color、font-size、font-style .etc.)
+ *  UTF-8
+ *  https://github.com/Timemm/H5table2excel.git
+ *  
  *  
  *  The original author infor
  *  jQuery table2excel - v1.1.2
@@ -13,3 +16,25 @@
  *  https://github.com/rainabba/jquery-table2excel
  *  Made by rainabba
  *  Under MIT License
+
+
+
+ # How to use
+
+ * just add it in to html head
+  * <script src="./js/jquery-3.3.1.min.js"></script>
+  * <script src="./js/jquery.H5table2excel.js"></script>
+
+ * option
+  * $(selector).table2excel({
+  *     exclude: ".noExl",//whats class tr has is not export to file
+  *     filename: "hello_excel" + new Date().getTime() + ".xls",//whats name the file exported
+  *     preserveColors: true ,// set to true if you want background colors and font colors preserved.The default is false
+  *     preserveHtmlStyle: true //set to true if you want html-css preserved(exclude color).The default is false
+  * });
+
+ * if you want more one table in one sheet or more one sheet
+ * you can add attribute "data-SheetName" in <table data-SheetName="The Sheet 1"></table>
+
+ # example
+  *you can try : https://codepen.io/timemm/pen/xxqGEmG
