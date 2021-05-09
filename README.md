@@ -37,4 +37,8 @@
  * you can add attribute "data-SheetName" in table html
 
  # example
-  *you can try : https://codepen.io/timemm/pen/xxqGEmG
+  * you can try : https://codepen.io/timemm/pen/xxqGEmG
+
+
+
+* MIT License
